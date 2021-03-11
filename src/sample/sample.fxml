@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="mainPane" prefHeight="609.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Slider fx:id="sldA" layoutX="549.0" layoutY="91.0" majorTickUnit="1.0" max="20.0" min="1.0" minorTickCount="1" prefHeight="38.0" prefWidth="187.0" showTickLabels="true" showTickMarks="true" value="5.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="91.0" />
+      <Canvas fx:id="mainCanvas" height="576.0" layoutX="14.0" layoutY="18.0" onMouseDragged="#onMouseDragged" onMousePressed="#onMosePressed" width="502.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="316.0" AnchorPane.topAnchor="18.0" />
+      <Label layoutX="641.0" layoutY="46.0" text="Сторона шестиугольника" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="46.0" />
+      <Slider fx:id="sldZoom" layoutX="549.0" layoutY="218.0" majorTickUnit="10.0" max="200.0" min="10.0" minorTickCount="10" prefHeight="45.0" prefWidth="187.0" showTickLabels="true" showTickMarks="true" value="100.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="218.0" />
+      <Label layoutX="552.0" layoutY="174.0" text="Масштабирование" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="174.0" />
+      <Label fx:id="messageLbl" layoutX="641.0" layoutY="503.0" prefHeight="21.0" prefWidth="251.0" text="Label" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="25.0" />
+   </children>
+</AnchorPane>
